@@ -19,7 +19,7 @@ Usage
 2. Download model as an XML file.
 3. Run vertabelo-flask-sqlalchemy script
 
-  ./vertabelo_flask_sqlalchemy -i my_model.xml -o my_model.py
+  ./vertabelo_flask_sqlalchemy.py -i my_model.xml -o my_model.py
 
 
 
