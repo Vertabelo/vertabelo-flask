@@ -402,7 +402,8 @@ class SaModel():
 ## this is a temporary solution
 
 string_sql_types = set(["varchar","char","nchar","nvarchar"])
-integer_sql_types = set(['int', 'int4','integer'])
+integer_sql_types = set(['int', 'int4','integer', 'serial'])
+float_sql_types = set(['real', 'float'])
 big_integer_sql_types = set(['numeric','decimal'])
 blob_sql_types = set(['oid', 'blob'])
 clob_sql_types = set(['text', 'clob'])
@@ -435,6 +436,9 @@ class Generator():
 
 		if(type in integer_sql_types):
 			return "Integer"
+
+		if(type in float_sql_types):
+			return "Float"
 
 		if(type in big_integer_sql_types):
 			return "BigInteger"
